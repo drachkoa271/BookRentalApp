@@ -1,0 +1,15 @@
+﻿@model System.Diagnostics.Activity
+
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Error</h1>
+<p class="text-danger">An error occurred while processing your request.</p>
+
+@if (Model?.Id != null)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.Id</code>
+    </p>
+}
